@@ -21,7 +21,7 @@ $(document).ready(function(){
 	$('#gif-buttons').on('click', '.gif-item', function(e){
 		$.ajax({
 		  //key = YsSZOsZw53w2hSPelBP3kfuyVQzg5rRP
-		  url: `http://api.giphy.com/v1/gifs/search?q=${this.value}&api_key=YsSZOsZw53w2hSPelBP3kfuyVQzg5rRP&limit=10`,
+		  url: `https://api.giphy.com/v1/gifs/search?q=${this.value}&api_key=YsSZOsZw53w2hSPelBP3kfuyVQzg5rRP&limit=10`,
 
 		  success: function(respuesta){
 			$('#gifs').html('');
